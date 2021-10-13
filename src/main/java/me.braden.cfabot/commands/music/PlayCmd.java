@@ -16,9 +16,9 @@ import me.braden.cfabot.commands.MusicCommand;
 import me.braden.cfabot.playlist.PlaylistLoader.Playlist;
 import me.braden.cfabot.utils.FormatUtil;
 import java.util.concurrent.TimeUnit;
-import net.dv8tion.jda.core.Permission;
-import net.dv8tion.jda.core.entities.Message;
-import net.dv8tion.jda.core.exceptions.PermissionException;
+import net.dv8tion.jda.api.Permission;
+import net.dv8tion.jda.api.entities.Message;
+import net.dv8tion.jda.api.exceptions.PermissionException;
 
 public class PlayCmd extends MusicCommand
 {

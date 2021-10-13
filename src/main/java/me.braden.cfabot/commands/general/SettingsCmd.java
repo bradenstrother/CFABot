@@ -5,11 +5,11 @@ import com.jagrosh.jdautilities.command.CommandEvent;
 import me.braden.cfabot.Bot;
 import me.braden.cfabot.settings.Settings;
 import me.braden.cfabot.utils.FormatUtil;
-import net.dv8tion.jda.core.EmbedBuilder;
-import net.dv8tion.jda.core.MessageBuilder;
-import net.dv8tion.jda.core.entities.Role;
-import net.dv8tion.jda.core.entities.TextChannel;
-import net.dv8tion.jda.core.entities.VoiceChannel;
+import net.dv8tion.jda.api.EmbedBuilder;
+import net.dv8tion.jda.api.MessageBuilder;
+import net.dv8tion.jda.api.entities.Role;
+import net.dv8tion.jda.api.entities.TextChannel;
+import net.dv8tion.jda.api.entities.VoiceChannel;
 
 public class SettingsCmd extends Command 
 {

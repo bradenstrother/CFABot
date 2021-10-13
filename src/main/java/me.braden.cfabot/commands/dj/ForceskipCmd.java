@@ -4,7 +4,7 @@ import com.jagrosh.jdautilities.command.CommandEvent;
 import me.braden.cfabot.Bot;
 import me.braden.cfabot.audio.AudioHandler;
 import me.braden.cfabot.commands.DJCommand;
-import net.dv8tion.jda.core.entities.User;
+import net.dv8tion.jda.api.entities.User;
 
 public class ForceskipCmd extends DJCommand 
 {

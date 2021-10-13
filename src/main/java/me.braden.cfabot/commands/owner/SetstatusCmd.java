@@ -3,7 +3,7 @@ package me.braden.cfabot.commands.owner;
 import com.jagrosh.jdautilities.command.CommandEvent;
 import me.braden.cfabot.Bot;
 import me.braden.cfabot.commands.OwnerCommand;
-import net.dv8tion.jda.core.OnlineStatus;
+import net.dv8tion.jda.api.OnlineStatus;
 
 public class SetstatusCmd extends OwnerCommand
 {

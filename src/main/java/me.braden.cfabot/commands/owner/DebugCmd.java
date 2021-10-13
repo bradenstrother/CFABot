@@ -6,9 +6,9 @@ import me.braden.cfabot.Bot;
 import me.braden.cfabot.commands.OwnerCommand;
 import me.braden.cfabot.utils.OtherUtil;
 import com.sedmelluq.discord.lavaplayer.tools.PlayerLibrary;
-import net.dv8tion.jda.core.JDAInfo;
-import net.dv8tion.jda.core.Permission;
-import net.dv8tion.jda.core.entities.ChannelType;
+import net.dv8tion.jda.api.JDAInfo;
+import net.dv8tion.jda.api.Permission;
+import net.dv8tion.jda.api.entities.ChannelType;
 
 public class DebugCmd extends OwnerCommand 
 {

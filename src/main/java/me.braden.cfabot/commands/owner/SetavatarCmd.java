@@ -6,7 +6,7 @@ import com.jagrosh.jdautilities.command.CommandEvent;
 import me.braden.cfabot.Bot;
 import me.braden.cfabot.commands.OwnerCommand;
 import me.braden.cfabot.utils.OtherUtil;
-import net.dv8tion.jda.core.entities.Icon;
+import net.dv8tion.jda.api.entities.Icon;
 
 public class SetavatarCmd extends OwnerCommand 
 {

@@ -6,8 +6,8 @@ import me.braden.cfabot.audio.AudioHandler;
 import me.braden.cfabot.audio.QueuedTrack;
 import me.braden.cfabot.commands.MusicCommand;
 import me.braden.cfabot.settings.Settings;
-import net.dv8tion.jda.core.Permission;
-import net.dv8tion.jda.core.entities.User;
+import net.dv8tion.jda.api.Permission;
+import net.dv8tion.jda.api.entities.User;
 
 public class RemoveCmd extends MusicCommand 
 {

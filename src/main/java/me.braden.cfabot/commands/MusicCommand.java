@@ -5,10 +5,10 @@ import com.jagrosh.jdautilities.command.CommandEvent;
 import me.braden.cfabot.Bot;
 import me.braden.cfabot.settings.Settings;
 import me.braden.cfabot.audio.AudioHandler;
-import net.dv8tion.jda.core.entities.GuildVoiceState;
-import net.dv8tion.jda.core.entities.TextChannel;
-import net.dv8tion.jda.core.entities.VoiceChannel;
-import net.dv8tion.jda.core.exceptions.PermissionException;
+import net.dv8tion.jda.api.entities.GuildVoiceState;
+import net.dv8tion.jda.api.entities.TextChannel;
+import net.dv8tion.jda.api.entities.VoiceChannel;
+import net.dv8tion.jda.api.exceptions.PermissionException;
 
 public abstract class MusicCommand extends Command 
 {

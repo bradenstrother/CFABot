@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.HashMap;
-import net.dv8tion.jda.core.entities.Guild;
+import net.dv8tion.jda.api.entities.Guild;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.slf4j.LoggerFactory;
@@ -61,7 +61,7 @@ public class SettingsManager implements GuildSettingsManager
     protected void writeSettings()
     {
         JSONObject obj = new JSONObject();
-        settings.keySet().stream().forEach(key -> {
+        settings.keySet().forEach(key -> {
             JSONObject o = new JSONObject();
             Settings s = settings.get(key);
             if(s.textId!=0)

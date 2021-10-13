@@ -12,9 +12,9 @@ import me.braden.cfabot.audio.PlayerManager;
 import me.braden.cfabot.gui.GUI;
 import me.braden.cfabot.playlist.PlaylistLoader;
 import me.braden.cfabot.settings.SettingsManager;
-import net.dv8tion.jda.core.JDA;
-import net.dv8tion.jda.core.entities.Game;
-import net.dv8tion.jda.core.entities.Guild;
+import net.dv8tion.jda.api.JDA;
+import net.dv8tion.jda.api.entities.Activity;
+import net.dv8tion.jda.api.entities.Guild;
 
 public class Bot
 {
@@ -92,9 +92,9 @@ public class Bot
 
     public void resetGame()
     {
-        Game game = config.getGame()==null || config.getGame().getName().equalsIgnoreCase("none") ? null : config.getGame();
-        if(!Objects.equals(jda.getPresence().getGame(), game))
-            jda.getPresence().setGame(game);
+        Activity game = config.getGame()==null || config.getGame().getName().equalsIgnoreCase("none") ? null : config.getGame();
+        if(!Objects.equals(jda.getPresence().getActivity(), game))
+            jda.getPresence().setActivity(game);
     }
 
     public void shutdown()
@@ -105,7 +105,7 @@ public class Bot
         threadpool.shutdownNow();
         if(jda.getStatus()!=JDA.Status.SHUTTING_DOWN)
         {
-            jda.getGuilds().stream().forEach(g ->
+            jda.getGuilds().forEach(g ->
             {
                 g.getAudioManager().closeAudioConnection();
                 AudioHandler ah = (AudioHandler)g.getAudioManager().getSendingHandler();

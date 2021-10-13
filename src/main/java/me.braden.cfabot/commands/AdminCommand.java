@@ -1,7 +1,7 @@
 package me.braden.cfabot.commands;
 
 import com.jagrosh.jdautilities.command.Command;
-import net.dv8tion.jda.core.Permission;
+import net.dv8tion.jda.api.Permission;
 
 public abstract class AdminCommand extends Command
 {

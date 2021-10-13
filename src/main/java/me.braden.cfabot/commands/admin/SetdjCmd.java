@@ -7,7 +7,7 @@ import me.braden.cfabot.Bot;
 import me.braden.cfabot.commands.AdminCommand;
 import me.braden.cfabot.settings.Settings;
 import me.braden.cfabot.utils.FormatUtil;
-import net.dv8tion.jda.core.entities.Role;
+import net.dv8tion.jda.api.entities.Role;
 
 public class SetdjCmd extends AdminCommand
 {

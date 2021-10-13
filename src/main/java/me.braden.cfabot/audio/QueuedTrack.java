@@ -3,7 +3,7 @@ package me.braden.cfabot.audio;
 import com.sedmelluq.discord.lavaplayer.track.AudioTrack;
 import me.braden.cfabot.queue.Queueable;
 import me.braden.cfabot.utils.FormatUtil;
-import net.dv8tion.jda.core.entities.User;
+import net.dv8tion.jda.api.entities.User;
 
 public class QueuedTrack implements Queueable
 {
